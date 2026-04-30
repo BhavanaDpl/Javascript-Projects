@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Password Generation | Validator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeIRp8Ut1lXF02e6YT7Rs1BVA_N8e1aA0XJg&s"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h2 id="title">Secure Password Generation | Validator 🔐</h2>
+        <!-- Password Strength Checker -->
+        <div class="input-field">
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+
+          <!-- Copy Button -->
+          <i id="copyBtn" class="fa-solid fa-copy"></i>
+          <i id="toggleBtn" class="fa-solid fa-eye"></i>
+        </div>
+
+        <div class="strength-meter">
+          <div class="strength-bar" id="strength-bar"></div>
+        </div>
+        <p id="strengthText">Start typing....</p>
+
+        <!-- Random Password Generator -->
+        <div class="selectItems">
+          <div class="select">
+            <label>Password Length</label>
+            <input type="number" id="length" min="6" max="20" value="8" />
+          </div>
+
+          <div class="select">
+            <label>Include Lowercase</label>
+            <input type="checkbox" id="lower" checked />
+          </div>
+
+          <div class="select">
+            <label>Include Uppercase</label>
+            <input type="checkbox" id="upper" checked />
+          </div>
+
+          <div class="select">
+            <label>Include Numbers</label>
+            <input type="checkbox" id="number" checked />
+          </div>
+
+          <div class="select">
+            <label>Include Symbols</label>
+            <input type="checkbox" id="symbol" />
+          </div>
+          <!-- <div class="select">
+            <label>Include Special Character</label>
+            <input type="checkbox" id="symbol" />
+          </div> -->
+        </div>
+
+        <!-- ACTION BUTTONS-->
+        <div class="btn-group">
+          <button id="generateBtn">Generate Password</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+        <!--  -->
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

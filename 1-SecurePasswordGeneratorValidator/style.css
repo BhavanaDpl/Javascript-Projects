@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+#title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: 700;
+}
+body {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 30px; */
+  height: 100vh;
+  align-items: center;
+  background: linear-gradient(135deg, #b6b2b2, #e5e6e6, #a7a7a7);
+}
+.container {
+  width: 100%;
+  max-width: 550px;
+  height: 430px;
+  padding: 20px;
+  border: 1px solid rgb(196, 193, 193);
+  box-shadow:
+    rgba(0, 0, 0, 0.07) 0px 1px 2px,
+    rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px,
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  /* text-align: center; */
+  /* gap: 30px; */
+}
+/* input field */
+.input-field {
+  position: relative;
+}
+.input-field input {
+  width: 100%;
+  padding: 10px 70px 10px 10px;
+  font-size: 20px;
+}
+/* copy button & toggle button */
+#copyBtn {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+}
+#copyBtn:hover {
+  color: cadetblue;
+}
+#toggleBtn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+#toggleBtn:hover {
+  color: rgb(229, 183, 123);
+}
+#length {
+  font-size: 15px;
+}
+input::placeholder {
+  color: #b8b3b3;
+}
+
+/* strength meter */
+.strength-meter {
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  background: rgba(125, 120, 120, 0.3);
+  margin-top: 10px;
+  overflow: hidden;
+}
+.strength-bar {
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+#strengthText {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #121212;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+/* random password generator */
+.selectItems {
+  margin: 20px 0px;
+}
+.select {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+.select label {
+  font-size: 18px;
+  font-weight: 603;
+}
+.select input[type="number"] {
+  width: 70px;
+  padding: 4px 8px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.select input[type="checkbox"] {
+  width: 18px;
+  cursor: pointer;
+}
+/* generate button */
+#generateBtn {
+  width: 40%;
+  background: rgb(173, 173, 173);
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#generateBtn:hover {
+  background-color: rgb(185, 114, 114);
+}
+#resetBtn {
+  width: 40%;
+  background: rgb(173, 173, 173);
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#resetBtn:hover {
+  background-color: rgb(82, 169, 114);
+}
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-left: 40px;
+}
